@@ -1,0 +1,20 @@
+/* Importation des polices */
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Poppins:ital,wght@0,300;0,400;1,100;1,400;1,500&display=swap");
+
+
+
+
+/* Styles pour les écrans de petite taille (téléphones) */
+@media only screen and (max-width: 600px) {
+    /* Styles pour les écrans de petite taille ici */
+}
+
+/* Styles pour les écrans de taille moyenne (tablettes) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Styles pour les écrans de taille moyenne ici */
+}
+
+/* Styles pour les écrans de grande taille (ordinateurs de bureau) */
+@media only screen and (min-width: 1025px) {
+    /* Styles pour les écrans de grande taille ici */
+}
