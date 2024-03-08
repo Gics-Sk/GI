@@ -1,7 +1,177 @@
 /* Importation des polices */
-@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Poppins:ital,wght@0,300;0,400;1,100;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Poppins:ital,wght@0,300;0,400;1,100;1,400;1,500&family=Racing+Sans+One&display=swap");
+/* color */
+:root {
+    --blanc: #ffffff;
+    --noire: #000000;
+    --bleu: #3182df;
+    --bleu-nuit: #0851a591;
+    --bleu-nuit-foncé: #0851a5;
+    --gris: #e7eef3;
+    --bleu-ciel: #c3e1f1;
+}
 
+/* Style navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    font-family: "koulen";
+    background-color: transparent;
+}
 
+.nav-link {
+    color: var(--blanc) !important;
+    text-align: center;
+    margin-right: 40px;
+}
+select {
+    border-style: none;
+    background-color: transparent;
+}
+select:focus {
+    outline: none;
+    border-color: transparent;
+}
+.nav-link.active {
+    color: var(--bleu) !important;
+}
+.nav-link:hover {
+    color: var(--bleu) !important;
+}
+
+/* style section1 */
+.first-section {
+    position: relative;
+    height: 100vh;
+    background-image: url("image/accueil.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bleu-nuit);
+    opacity: 0.9;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.title-1 {
+    font-family: "racing sans one";
+    font-size: 60px !important;
+    text-align: center;
+    margin: 0 auto;
+}
+.slogan {
+    font-family: "poppins";
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+.begin {
+    background-color: var(--bleu-nuit-foncé) !important;
+    border-style: none;
+    text-align: center;
+    font-family: "poppins";
+    font-weight: 600;
+    margin-top: 25px;
+}
+.begin:hover {
+    background-color: var(--blanc) !important;
+    color: var(--noire);
+    border-style: none;
+    text-align: center;
+}
+
+/* Styles pour la deuxième section */
+.second-section {
+    padding: 60px 0;
+    background-color: var(--gris);
+}
+
+.section-title {
+    font-family: "koulen";
+    text-align: center;
+    font-size: 36px;
+    color: var(--bleu-nuit-foncé);
+}
+
+.section-description {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+    font-family: "poppins";
+}
+
+.card {
+    border: none; /* Supprimer les bordures des cartes */
+}
+.card-title {
+    color: var(--bleu-nuit-foncé);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    font-family: "poppins";
+}
+/* third section  */
+.third-section {
+    padding: 60px 0;
+}
+
+/* Styles pour la troisième section */
+.third-section {
+    padding: 60px 0;
+    background-color: var(--blanc); /* Changer la couleur de fond selon vos préférences */
+}
+
+.card {
+    border: none; /* Supprimer les bordures des cartes */
+    position: relative;
+    overflow: hidden;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--gris); /* Couleur d'arrière-plan de l'overlay */
+    color: var(--blanc); /* Couleur du texte */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-overlay:hover {
+    opacity: 0.5;
+}
+
+.card-title {
+    font-family: "koulen";
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Styles pour la quatrième section */
+.fourth-section {
+    padding: 60px 0;
+    background-color: var(--blanc); /* Changer la couleur de fond selon vos préférences */
+}
+
+.card {
+    border: none; /* Supprimer les bordures des cartes */
+}
 
 
 /* Styles pour les écrans de petite taille (téléphones) */
