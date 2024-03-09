@@ -11,6 +11,120 @@
     --bleu-ciel: #c3e1f1;
 }
 
+html {
+    font-size: 16px;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    margin: auto;
+    width: 100%;
+    height: auto;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  li {
+    font-weight: 400;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  input[type="number"] {
+    overflow: hidden !important;
+  }
+  
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
+  .btn-primary{
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    border-radius: 8px;
+  }
+  
+  .btn-primary {
+    background-color: var(--bleu-nuit-foncé) !important;
+    border: 1px solid var(--bleu-nuit-foncé);
+  }
+  .btn:hover,
+  .btn:focus-visible,
+  .btn-check:focus+.btn,
+  .btn:focus,
+  .btn:first-child:active,
+  :not(.btn-check)+.btn:active,
+  .btn:first-child:active:focus-visible,
+  :not(.btn-check)+.btn:active:focus-visible {
+    box-shadow: none;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .btn:hover.btn-primary,
+  .btn:focus-visible.btn-primary,
+  .btn-check:focus+.btn.btn-primary,
+  .btn:focus.btn-primary,
+  .btn:first-child:active.btn-primary,
+  :not(.btn-check)+.btn:active.btn-primary{
+    background-color: var(--bleu-nuit-foncé) !important;
+    border: 1px solid var(--bleu-nuit-foncé);
+    text-decoration: none;
+  }
+  
+  .btn:hover.btn-primary,
+  .btn:focus-visible.btn-primary,
+  .btn-check:focus+.btn.btn-primary,
+  .btn:focus.btn-primary,
+  .btn:first-child:active.btn-primary,
+  :not(.btn-check)+.btn:active.btn-primary {
+    border: 1px solid var(--bleu-nuit-foncé);
+  }
+  
+  .form-control{
+    background-color: var(--color-secondary);
+    padding: 0.75rem;
+    border: 1.5px solid #d0d5dd;
+    border-radius: 4px;
+    width: 100%;
+    color: #667085;
+  }
+  
+  .form-control:focus{
+    background-color: var(--color-secondary);
+    border-color: #D0D5DD;
+    box-shadow: none;
+    color: var(--color-white);
+  }
+  
+  .form-control.is-invalid:focus,
+  .was-validated .form-control:invalid:focus {
+    border: none;
+    box-shadow: none;
+  }
+  
+  .form-control::placeholder {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #667085;
+  }
+  
+  
+  .form-control {
+    margin-top: 0.5rem;
+  
+  }
+
 /* Style navbar */
 .navbar {
     position: fixed;
@@ -42,58 +156,37 @@ select:focus {
 
 /* style section1 */
 .first-section {
-    position: relative;
-    height: 100vh;
     background-image: url("image/accueil.png");
     background-size: cover;
     background-position: center;
-    overflow: hidden;
+}
+
+.section-bg{
+    padding: 14rem 0!important;
 }
 
 .gradient-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background: var(--bleu-nuit);
     opacity: 0.9;
-    color: white;
-    display: flex;
-    align-items: center;
 }
+
 .title-1 {
     font-family: "racing sans one";
-    font-size: 60px !important;
+    font-size: 3.75rem!important;
     text-align: center;
-    margin: 0 auto;
+    margin: 0;
 }
 .slogan {
-    font-family: "poppins";
     text-align: center;
     justify-content: center;
-    font-size: 15px;
-    max-width: 750px;
-    margin: 0 auto;
-}
-.begin {
-    background-color: var(--bleu-nuit-foncé) !important;
-    border-style: none;
-    text-align: center;
-    font-family: "poppins";
-    font-weight: 600;
-    margin-top: 25px;
-}
-.begin:hover {
-    background-color: var(--blanc) !important;
-    color: var(--noire);
-    border-style: none;
-    text-align: center;
+    font-size: 1rem;
+    margin: 4rem 9rem;
+    line-height: 1.5rem;
 }
 
 /* Styles pour la deuxième section */
 .second-section {
-    padding: 60px 0;
+    padding: 3.75rem 0;
     background-color: var(--gris);
 }
 
@@ -106,20 +199,21 @@ select:focus {
 
 .section-description {
     text-align: center;
-    font-size: 18px;
-    margin-bottom: 40px;
-    font-family: "poppins";
+    font-size: 1.125rem;
+    margin-bottom: 2.5rem;
 }
 
 .card {
-    border: none; /* Supprimer les bordures des cartes */
+    border: none;
 }
 .card-title {
     color: var(--bleu-nuit-foncé);
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
-    font-family: "poppins";
+    font-family: "koulen";
+    font-size: 1.5rem;
+    text-align: center;
 }
 /* third section  */
 .third-section {
@@ -128,14 +222,8 @@ select:focus {
 
 /* Styles pour la troisième section */
 .third-section {
-    padding: 60px 0;
-    background-color: var(--blanc); /* Changer la couleur de fond selon vos préférences */
-}
-
-.card {
-    border: none; /* Supprimer les bordures des cartes */
-    position: relative;
-    overflow: hidden;
+    padding: 3.75rem 0;
+    background-color: var(--blanc);
 }
 
 .card-overlay {
@@ -144,8 +232,8 @@ select:focus {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--gris); /* Couleur d'arrière-plan de l'overlay */
-    color: var(--blanc); /* Couleur du texte */
+    background-color: var(--gris);
+    color: var(--blanc);
     opacity: 0;
     transition: opacity 0.3s ease;
     display: flex;
@@ -157,21 +245,59 @@ select:focus {
     opacity: 0.5;
 }
 
-.card-title {
-    font-family: "koulen";
-    font-size: 24px;
-    text-align: center;
-}
-
 /* Styles pour la quatrième section */
 .fourth-section {
-    padding: 60px 0;
-    background-color: var(--blanc); /* Changer la couleur de fond selon vos préférences */
+    padding: 3.75rem 0;
+    background-color: var(--blanc);
 }
 
-.card {
-    border: none; /* Supprimer les bordures des cartes */
-}
+
+/* page index */
+
+/* service */
+.services {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+  
+  .services .row {
+    justify-content: center;
+  }
+  
+  .services .card {
+    border: none;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .15);
+  }
+  
+  .services .card .card-body {
+    padding: 1.5rem;
+  }
+  
+  .services .card-text {
+    color: #747579;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  /* portofolio */
+
+
+  /* partenaires */
+
+  /* newsletter */
+
+  /* footer */
+
+
+  /* page service */
+
+  /* processus */
+
+
+  /* page contact */
+ 
+  /* contact */
 
 
 /* Styles pour les écrans de petite taille (téléphones) */

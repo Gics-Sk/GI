@@ -4,66 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/bootstrap-icons.css">
+   <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="image/favicon.png" type="image/png">
     <title>GICS | ACCUEIL</title>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light navbar-scrolled">
-        <a class="navbar-brand ml-5 mr-5" href="#">
-            <img src="image/logo.png" alt="GICS" height="60">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse ml-5 mr-5 " id="navbarNav">
-            <ul class="navbar-nav ml-auto align-items-center">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">ACCUEIL</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="service.html">SERVICE</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="apropos.html">A PROPOS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">CONTACT</a>
-                </li>
-                <li class="nav-item">
-                    <select class="nav-link">
-                        <option value="EN">EN</option>
-                        <option value="FR">FR</option>
-                    </select>
-                </li>
-            </ul>
+  <div class="first-section">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light navbar-scrolled">
+        <div class="container">
+          <a class="navbar-brand ml-5 mr-5" href="#">
+              <img src="image/logo.png" alt="GICS" height="50">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ml-5 mr-5 justify-content-end" id="navbarNav">
+              <ul class="navbar-nav ml-auto align-items-center">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="index.html">ACCUEIL</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="service.html">SERVICE</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="apropos.html">A PROPOS</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact.html">CONTACT</a>
+                  </li>
+                  <li class="nav-item">
+                      <select class="nav-link">
+                          <option value="EN">EN</option>
+                          <option value="FR">FR</option>
+                      </select>
+                  </li>
+              </ul>
+          </div>
         </div>
-    </nav>
-    <!-- First Section -->
-    <section class="first-section">
-        <div class="gradient-overlay wow animate__animated animate__slideInDown">
-            <div class="container wow animate__animated animate__slideInUp">
-                <div class="mt-2 text-center text-white">
-                    <h1 class="title-1">Solutions Innovantes, Résultats Exceptionnels</h1>
-                    <h4 class="slogan mt-5">
-                        Transformez vos idées en réalité numérique avec nous, votre partenaire de confiance en
-                        développement web/mobile et design. Des solutions sur mesure pour propulser votre présence
-                        en ligne et atteindre vos objectifs numériques. Découvrez comment nous pouvons faire évoluer
-                        votre entreprise aujourd'hui.
-                    </h4>
-                    <button class="btn btn-primary mt-5 begin">COMMENCER</button>
-                </div>
-            </div>
-        </div>
-    </section>
+      </nav>
+      <!-- First Section -->
+      <section class="">
+          <div class="gradient-overlay wow animate__animated animate__slideInDown">
+              <div class="container wow animate__animated animate__slideInUp">
+                  <div class="mt-2 text-center text-white">
+                      <h1 class="title-1">Solutions Innovantes, Résultats Exceptionnels</h1>
+                      <h4 class="slogan mt-5">
+                          Transformez vos idées en réalité numérique avec nous, votre partenaire de confiance en
+                          développement web/mobile et design. Des solutions sur mesure pour propulser votre présence
+                          en ligne et atteindre vos objectifs numériques. Découvrez comment nous pouvons faire évoluer
+                          votre entreprise aujourd'hui.
+                      </h4>
+                      <button class="btn btn-primary mt-5 begin">COMMENCER</button>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
     <!-- second Section -->
     <section class="second-section">
         <div class="container">
@@ -208,12 +211,7 @@
     </section>
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script>new WOW().init();</script>
-</body>
+   
+<script src="js/bootstrap.bundle.js"></script></body>
 
 </html>
