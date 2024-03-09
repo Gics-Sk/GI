@@ -162,7 +162,7 @@ select:focus {
 }
 
 .section-bg{
-    padding: 14rem 0!important;
+    padding: 14rem 0 6rem!important;
 }
 
 .gradient-overlay {
@@ -182,6 +182,24 @@ select:focus {
     font-size: 1rem;
     margin: 4rem 9rem;
     line-height: 1.5rem;
+}
+
+.header-transform .card{
+    width: 300px;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.header-transform .card .card-line{
+    height: 7px;
+    width: 120px;
+    background-color: var(--bleu-nuit);
+    margin: 2rem auto;
+}
+
+.header-transform .card .card-title{
+color: #000000;
+margin-bottom: 2rem;
 }
 
 /* Styles pour la deuxième section */
@@ -286,14 +304,47 @@ select:focus {
   /* partenaires */
 
   /* newsletter */
+  .newsletter{
+      background-color: #C3E1F1;
+      padding: 10rem 0;
+      margin: 3rem 0;
+  }
+
+  .newsletter .newsletter-bg{
+      background-color: var(--blanc);
+      padding: 2.5rem;
+      border-radius: 8px;
+  }
 
   /* footer */
+ .footer {
+     background-color: var(--bleu-nuit-foncé);
+     padding: 8rem 0 0;
+     color: var(--blanc);
+     text-align: center;
+ }
 
+ .footer .footer-link{
+    padding: 1rem;
+ }
+
+ .footer .copyright .container {
+     padding: 1rem;
+     border-top: 2px solid var(--noire);
+ }
 
   /* page service */
 
   /* processus */
+    .processus {
+        background-color: #d7Ecfc;
+        margin-bottom: 6rem;
+        padding-bottom: 6rem;
+    }
 
+    .header-transform{
+        transform: translateY(-91px);
+    }
 
   /* page contact */
  
