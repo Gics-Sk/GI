@@ -205,13 +205,14 @@ select:focus {
 
 .card {
     border: none;
+    margin-bottom: auto;
 }
 .card-title {
     color: var(--bleu-nuit-foncé);
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
-    font-family: "koulen";
+    font-family: "poppins";
     font-size: 1.5rem;
     text-align: center;
 }
@@ -256,15 +257,18 @@ select:focus {
 
 /* service */
 .services {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    background-color: var(--bleu-ciel);
+    
+    
   }
   
   .services .row {
     justify-content: center;
+    
   }
   
   .services .card {
+    
     border: none;
     box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .15);
   }
@@ -280,7 +284,7 @@ select:focus {
     font-weight: 400;
   }
 
-  /* portofolio */
+  /* portfolio */
 
 
   /* partenaires */
