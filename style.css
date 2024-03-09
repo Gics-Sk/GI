@@ -223,13 +223,14 @@ margin-bottom: 2rem;
 
 .card {
     border: none;
+    margin-bottom: auto;
 }
 .card-title {
     color: var(--bleu-nuit-foncé);
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
-    font-family: "koulen";
+    font-family: "poppins";
     font-size: 1.5rem;
     text-align: center;
 }
@@ -274,15 +275,18 @@ margin-bottom: 2rem;
 
 /* service */
 .services {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    background-color: var(--bleu-ciel);
+    
+    
   }
   
   .services .row {
     justify-content: center;
+    
   }
   
   .services .card {
+    
     border: none;
     box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .15);
   }
@@ -298,7 +302,7 @@ margin-bottom: 2rem;
     font-weight: 400;
   }
 
-  /* portofolio */
+  /* portfolio */
 
 
   /* partenaires */
