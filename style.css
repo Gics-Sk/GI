@@ -174,10 +174,12 @@ input[type="number"] {
 /* navbar */
 .navbar {
     position: fixed;
+    overflow:hidden;
     width: 100%;
     z-index: 1000;
     font-family: "koulen";
-    background-color: transparent;
+    background-color:transparent;
+    transition: background-color 0.3s;
 }
 
 .nav-link {
@@ -249,7 +251,6 @@ select:focus {
 /* service */
 .services {
     background-color: var(--bleu-ciel);
-    margin: 7rem 0;
     padding: 5rem 0;
 }
 
@@ -281,13 +282,15 @@ select:focus {
 }
 
 /* portfolio */
-/* .portfolio{
+.portofolio{
+    padding: 5rem 0;
 
 } */
 
 /* partenaires */
 .partenaires{
 margin: 7rem 0;
+padding: 5rem 0;
 }
 
 /* newsletter */
@@ -305,7 +308,7 @@ margin: 7rem 0;
 /* footer */
 .footer {
     background-color: var(--bleu-nuit-foncé);
-    padding: 8rem 0 0;
+    padding: 3rem 0 0;
     color: var(--blanc);
     text-align: center;
 }
@@ -313,7 +316,11 @@ margin: 7rem 0;
 .footer .footer-link {
     padding: 1rem;
 }
+.footer-line{
+    margin-left: 5rem;
+    margin-right: 5rem;
 
+}
 .footer .copyright .container {
     padding: 1rem;
     border-top: 2px solid var(--color-white);
