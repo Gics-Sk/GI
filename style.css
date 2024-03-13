@@ -178,7 +178,10 @@ input[type="number"] {
     z-index: 1000;
     font-family: "koulen";
 }
-
+.navbar-scrolled {
+    background-color: rgba(22, 35, 78, 0.8); /* Utilisez la couleur de fond que vous préférez */
+  }
+  
 .nav-link {
     color: var(--blanc) !important;
     text-align: center;
