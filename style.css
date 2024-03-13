@@ -341,6 +341,9 @@ padding: 5rem 0;
 .slick-prev, .slick-next {
     display: none!important;
   }
+  .title-2{
+    font-family: "koulen";
+  }
 
 /* page contact */
 
