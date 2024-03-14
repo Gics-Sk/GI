@@ -387,6 +387,12 @@ input[type="number"] {
     padding: 2rem;
 }
 
+.contact .contact-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
 @media (min-width: 768px) and (max-width: 991.98px) {
     h1 {
         font-size: 3.75rem;
@@ -429,6 +435,10 @@ input[type="number"] {
 
     .newsletter {
         padding: 10rem 0;
+    }
+    .contact form {
+        background-color: #f0f2f8;
+        padding: 4rem;
     }
 }
 
