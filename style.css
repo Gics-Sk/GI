@@ -4,10 +4,10 @@
 :root {
     --blanc: #ffffff;
     --noire: #000000;
-    --bleu: #3182df;
+    --bleu: #69a6eb;
     --bleu-nuit: #0851a591;
     --bleu-nuit-foncé: #0851a5;
-    --gris: #e7eef3;
+    --gris: #888b8d;
     --bleu-ciel: #c3e1f1;
 }
 
@@ -27,7 +27,7 @@ img {
     max-width: 100%;
 }
 
-ul{
+ul {
     padding-left: 0;
 }
 
@@ -38,8 +38,9 @@ li {
 }
 
 h2 {
+    font-family: "koulen";
     font-size: 2rem !important;
-    font-weight: 900;
+    font-weight: 300;
     text-align: center;
     margin: 0;
     color: var(--bleu-nuit-foncé);
@@ -74,22 +75,22 @@ input[type="number"] {
 
 .btn:hover,
 .btn:focus-visible,
-.btn-check:focus+.btn,
+.btn-check:focus + .btn,
 .btn:focus,
 .btn:first-child:active,
-:not(.btn-check)+.btn:active,
+:not(.btn-check) + .btn:active,
 .btn:first-child:active:focus-visible,
-:not(.btn-check)+.btn:active:focus-visible {
+:not(.btn-check) + .btn:active:focus-visible {
     box-shadow: none;
     transition: 0.5s ease-in-out;
 }
 
 .btn:hover.btn-primary,
 .btn:focus-visible.btn-primary,
-.btn-check:focus+.btn.btn-primary,
+.btn-check:focus + .btn.btn-primary,
 .btn:focus.btn-primary,
 .btn:first-child:active.btn-primary,
-:not(.btn-check)+.btn:active.btn-primary {
+:not(.btn-check) + .btn:active.btn-primary {
     background-color: var(--bleu-nuit-foncé) !important;
     border: 1px solid var(--bleu-nuit-foncé);
     text-decoration: none;
@@ -97,10 +98,10 @@ input[type="number"] {
 
 .btn:hover.btn-primary,
 .btn:focus-visible.btn-primary,
-.btn-check:focus+.btn.btn-primary,
+.btn-check:focus + .btn.btn-primary,
 .btn:focus.btn-primary,
 .btn:first-child:active.btn-primary,
-:not(.btn-check)+.btn:active.btn-primary {
+:not(.btn-check) + .btn:active.btn-primary {
     border: 1px solid var(--bleu-nuit-foncé);
 }
 
@@ -131,7 +132,6 @@ input[type="number"] {
     font-weight: 400;
     color: var(--noire);
 }
-
 
 .form-control {
     margin-top: 0.5rem;
@@ -174,29 +174,21 @@ input[type="number"] {
 /* navbar */
 .navbar {
     position: fixed;
-    overflow:hidden;
     width: 100%;
     z-index: 1000;
     font-family: "koulen";
-    background-color:transparent;
-    transition: background-color 0.3s;
 }
-
+.navbar-scrolled {
+    background-color: rgba(22, 35, 78, 0.8); /* Utilisez la couleur de fond que vous préférez */
+  }
+  
 .nav-link {
     color: var(--blanc) !important;
     text-align: center;
     margin-right: 20px;
 }
 
-select {
-    border-style: none;
-    background-color: transparent;
-}
 
-select:focus {
-    outline: none;
-    border-color: transparent;
-}
 
 .nav-link.active {
     color: var(--bleu) !important;
@@ -249,13 +241,18 @@ select:focus {
 }
 
 /* service */
+.banner-services {
+    background-image: url("image/service.png");
+    background-size: cover;
+    background-position: center;
+}
 .services {
     background-color: var(--bleu-ciel);
     padding: 5rem 0;
 }
 
 .services .card {
-    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .15);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
     margin: 0 auto;
     width: 360px;
 }
@@ -282,20 +279,20 @@ select:focus {
 }
 
 /* portfolio */
-.portofolio{
+.portofolio {
     padding: 5rem 0;
-
-} */
+}
+*/
 
 /* partenaires */
-.partenaires{
-margin: 7rem 0;
-padding: 5rem 0;
+.partenaires {
+    margin: 7rem 0;
+    padding: 5rem 0;
 }
 
 /* newsletter */
 .newsletter {
-    background-color: #C3E1F1;
+    background-color: #c3e1f1;
     padding: 5rem 0;
 }
 
@@ -316,10 +313,9 @@ padding: 5rem 0;
 .footer .footer-link {
     padding: 1rem;
 }
-.footer-line{
+.footer-line {
     margin-left: 5rem;
     margin-right: 5rem;
-
 }
 .footer .copyright .container {
     padding: 1rem;
@@ -328,31 +324,65 @@ padding: 5rem 0;
 
 /* page about */
 
+/* header */
+.banner-about {
+    background-image: url("image/apropos.png");
+    background-size: cover;
+    background-position: center;
+}
+.banner-first {
+    font-family: "koulen";
+    font-weight: 500;
+}
+.banner-text {
+    font-family: "koulen";
+    font-weight: 500;
+    color: var(--blanc);
+    font-size: 1.5rem !important;
+}
 /* processus */
 .processus {
-    background-color: #dbeefb;
+    background: linear-gradient(to bottom, #d7ecfc, #f0f4f6);
     padding-bottom: 6rem;
 }
-
+.title-process {
+    display: flex;
+}
+.card-processus {
+    background: none;
+}
+.number {
+    font-weight: 900;
+    font-size: 5rem !important;
+    color: var(--gris);
+    display: flex;
+}
 .header-transform {
     transform: translateY(-91px);
 }
 
-.slick-prev, .slick-next {
-    display: none!important;
-  }
-  .title-2{
+.slick-prev,
+.slick-next {
+    display: none !important;
+}
+/* card */
+.title-2 {
     font-family: "koulen";
-  }
+}
 
 /* page contact */
 
 /* contact */
-.contact{
+.banner-contact {
+    background-image: url("image/contact.png");
+    background-size: cover;
+    background-position: center;
+}
+.contact {
     margin: 6.5rem;
 }
 
-.contact form{
+.contact form {
     background-color: #f0f2f8;
     padding: 2rem;
 }
@@ -365,7 +395,7 @@ padding: 5rem 0;
         text-align: center;
         margin: 0;
     }
-    
+
     .banner-content {
         margin: 4rem 6rem;
     }
@@ -393,7 +423,7 @@ padding: 5rem 0;
     }
 
     .services .card {
-        box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .15);
+        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
         width: 310px;
     }
 
