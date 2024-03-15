@@ -1,7 +1,7 @@
 $('.responsive').slick({
     dots: false,
     infinite: false,
-    speed: 100,
+    speed: 1,
     slidesToShow: 3,
     slidesToScroll: 3,
     responsive: [

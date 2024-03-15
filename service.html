@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/slick.css">
   <!-- google font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css' rel='stylesheet' />
   <!-- style css -->
   <link rel="stylesheet" href="style.css">
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -37,10 +38,10 @@
             </button>
             <div class="navbar-collapse collapse justify-content-end" id="navbarSupportedContent">
               <li class="nav-item">
-                <a class="nav-link active" href="index.html">ACCUEIL</a>
+                <a class="nav-link " href="index.html">ACCUEIL</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="service.html">SERVICES</a>
+                <a class="nav-link active" href="service.html">SERVICES</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">A PROPOS</a>
@@ -62,7 +63,11 @@
             </div>
           </div>
         </nav>
-
+        <div class="progress-wrap">
+          <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+          </svg>
+        </div>
         <div class="banner-bg">
           <div class="container">
             <div class="row">
@@ -89,67 +94,38 @@
     <div class="container">
       <div class="row text-center">
         <div class="col-md-7 col-lg-5 mb-5 mx-auto">
-          <h2 class="section-title">services</h2>
+          <h2 class="section-title">SERVICES</h2>
           <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et
             juste. Praesent Mattis commodo augue.​</span>
         </div>
 
       </div>
       <div class="row pb-7">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">CONCEPTION </h3>
-              <h5 class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                elit. Suspendisse et juste. Praesent Mattis commodo augue.<h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mt-9 mt-md-0 mt-lg-0">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">COMMERCIALISATION </h3>
-              <h5 class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                elit. Suspendisse et juste. Praesent Mattis commodo augue.<h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mt-9 mt-lg-0">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">RESEAUX SOCIAUX </h3>
-              <h5 class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                elit. Suspendisse et juste. Praesent Mattis commodo augue.<h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mt-9">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">DEVELOPPEMENT </h3>
-              <h5 class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                elit. Suspendisse et juste. Praesent Mattis commodo augue.<h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mt-9">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">DESIGN </h3>
-              <h5 class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                elit. Suspendisse et juste. Praesent Mattis commodo augue.<h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mt-9">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">SUPPORT D'AIDE</h3>
-              <h5 class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                elit. Suspendisse et juste. Praesent Mattis commodo augue.<h5>
-            </div>
-          </div>
-        </div>
+        <main class="card_grid">
+          <section class="cards cyan">
+            <h2 class="card_title">REFERENCEMENT SEO</h2>
+            <p class="card_content">Monitors activity to identify project roadblocks</p>
+            <img class="card_img" src="image/search-engine-optimization.png" width="100" alt="Supervisor">
+          </section>
+      
+          <section class="cards red">
+            <h2 class="card_title">DEVELOPPEMENT</h2>
+            <p class="card_content">Scans our talent network to create the optimal team for your project</p>
+            <img class="card_img" src="image/app-development.png" width="100" alt="page-home">
+          </section>
+
+          <section class="cards blue">
+            <h2 class="card_title">DESIGN UI/UX</h2>
+            <p class="card_content">Uses data from past projects to provide better delivery estimates</p>
+            <img class="card_img" src="image/ux.png" width="100" alt="Calculator">
+          </section>
+
+          <section class="cards orange">
+            <h2 class="card_title">SUPPORT D'AIDE</h2>
+            <p class="card_content">Uses data from past projects to provide better delivery estimates</p>
+            <img class="card_img" src="image/help.png" width="100" alt="Calculator">
+          </section>
+        </main>
       </div>
     </div>
   </div><!-- .services -->
@@ -222,6 +198,7 @@
       </div>
     </div>
   </div><!-- .footer -->
+  <script src="script.js"></script>
 
   <script src="js/bootstrap.bundle.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

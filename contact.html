@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-</html><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,6 +14,8 @@
   <!-- google font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
   <!-- style css -->
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css' rel='stylesheet' />
+
   <link rel="stylesheet" href="style.css">
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <link rel="shortcut icon" href="image/favicon.png" type="image/png">
@@ -38,7 +39,7 @@
             </button>
             <div class="navbar-collapse collapse justify-content-end" id="navbarSupportedContent">
               <li class="nav-item">
-                <a class="nav-link active" href="index.html">ACCUEIL</a>
+                <a class="nav-link " href="index.html">ACCUEIL</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="service.html">SERVICES</a>
@@ -47,7 +48,7 @@
                 <a class="nav-link" href="about.html">A PROPOS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">CONTACT</a>
+                <a class="nav-link active" href="contact.html">CONTACT</a>
               </li>
 
               <li class="nav-item dropdown">
@@ -63,7 +64,11 @@
             </div>
           </div>
         </nav>
-
+        <div class="progress-wrap">
+          <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+          </svg>
+        </div>
         <div class="banner-bg">
           <div class="container">
             <div class="row">
@@ -93,37 +98,37 @@
               <h3 class="mb-7">Demander une consultation gratuite</h3>
               <form action="" class="">
                 <div>
-                    <input type="text" name="nom" placeholder="VOTRE NOM" class="form-control">
+                  <input type="text" name="nom" placeholder="VOTRE NOM" class="form-control">
                 </div>
                 <div class="my-4">
-                    <input type="text" name="prenom" placeholder="VOTRE NOM" class="form-control">
+                  <input type="text" name="prenom" placeholder="VOTRE NOM" class="form-control">
                 </div>
                 <div>
-                    <input type="text" name="message" placeholder="VOTRE NOM" class="form-control">
+                  <input type="text" name="message" placeholder="VOTRE NOM" class="form-control">
                 </div>
                 <div class="mt-4 text-center">
-                    <button class="btn btn-primary rounded-0 py-3 px-5">SOUMETTRE</button>
+                  <button class="btn btn-primary rounded-0 py-3 px-5">SOUMETTRE</button>
                 </div>
               </form>
             </div>
             <div class="col-12 col-md-5 col-lg-5">
-                <h3 class="mb-7">ENTRER EN CONTACT</h3>
-                <h4>REJOIGNEZ-NOUS</h4>
-                 <ul class="mt-7">
-                  <li class="contact-item">
-                    <div class="mx-3"><img src="image/address.svg" alt="address"></div>
-                    <span>Cotonou</span>
-                  </li>
-                  <li class="contact-item">
-                    <div class="mx-3"><img src="image/email.svg" alt="mail"></div>
-                    <span>contact@gicsexpertise.com</span>
-                  </li>
-                  <li class="contact-item">
-                    <div class="mx-3"><img src="image/phone.svg" alt="phone"></div>
-                    <span>+229 66739946</span>
-                  </li>
-                 </ul>
-              </div>
+              <h3 class="mb-7">ENTRER EN CONTACT</h3>
+              <h4>REJOIGNEZ-NOUS</h4>
+              <ul class="mt-7">
+                <li class="contact-item">
+                  <div class="mx-3"><img src="image/address.svg" alt="address"></div>
+                  <span>Cotonou</span>
+                </li>
+                <li class="contact-item">
+                  <div class="mx-3"><img src="image/email.svg" alt="mail"></div>
+                  <span>contact@gicsexpertise.com</span>
+                </li>
+                <li class="contact-item">
+                  <div class="mx-3"><img src="image/phone.svg" alt="phone"></div>
+                  <span>+229 66739946</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -198,12 +203,13 @@
       </div>
     </div>
   </div><!-- .footer -->
+  <script src="script.js"></script>
 
   <script src="js/bootstrap.bundle.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/slick.js"></script>
   <script src="js/slick.min.js"></script>
-  
+
 </body>
 
 </html>
