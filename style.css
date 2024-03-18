@@ -272,40 +272,7 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-bottom: 2rem;
 }
 
-/* service dev */
-.banner-dev {
-    background-image: url("image/Background.png");
-    background-size: cover;
-    background-position: center;
-    height: 50rem;
-}
-.banner-title-ser {
-    display: flex;
-}
-.banner-content-ser {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    color: var(--bleu-nuit-foncé);
-}
-.banner-description-ser {
-    color: var(--noire);
-}
-.img_card {
-    width: 5rem;
-    height: 5rem;
-    margin: auto;
-}
-.img-tech{
-    width: 5rem;
-    height: 5rem;
-    margin: auto;
-}
-.border-red {
-    border-top: 0.2rem solid #ff0000;
-}
-.technologie{
-    padding: 5rem 0;
-}
+/* service */
 .services {
     background-color: var(--bleu-ciel);
     padding: 5rem 0 0;
@@ -390,6 +357,47 @@ input[type="number"]::-webkit-inner-spin-button {
     display: block;
 }
 
+/* service_dev */
+.technologie{
+    padding: 5rem 0;
+}
+
+.banner-dev .banner-bg{
+    padding-bottom: 7rem!important;
+}
+
+.banner-dev {
+    background-image: url("image/Background.png");
+    background-size: cover;
+    background-position: center;
+    height: auto;
+}
+.banner-title-ser {
+    display: flex;
+}
+.banner-content-ser {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: var(--bleu-nuit-foncé);
+}
+.banner-description-ser {
+    color: var(--noire);
+}
+.img_card {
+    width: 5rem;
+    height: 5rem;
+    margin: auto;
+}
+.img-tech{
+    width: 5rem;
+    height: 5rem;
+    margin: auto;
+}
+.border-red {
+    border-top: 0.2rem solid #ff0000;
+}
+
+
 /* portfolio */
 .portofolio {
     padding: 5rem 0;
@@ -398,10 +406,6 @@ input[type="number"]::-webkit-inner-spin-button {
 /* partenaires */
 .partenaires {
     margin-bottom: 7rem;
-}
-
-.partenaires .card {
-    background-color: #888b8d;
 }
 
 /* newsletter */
@@ -436,6 +440,14 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .footer .footer-link {
     padding: 1rem;
+}
+
+.footer .nav {
+    flex-direction: row;
+}
+
+.footer .nav-link{
+    margin-right: 0.5rem;
 }
 
 .footer .footer-list-item {
@@ -702,9 +714,18 @@ input[type="number"]::-webkit-inner-spin-button {
         margin: 0;
     }
 
+    .footer .nav {
+        flex-direction: column;
+    }
+
     .nav-link {
         font-size: 1.25rem;
     }
+
+    .footer .nav-link{
+        margin-right: 0rem;
+    }
+    
 
     .banner-bg .banner-first {
         font-size: 3.75rem !important;
