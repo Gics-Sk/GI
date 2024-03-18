@@ -1,5 +1,5 @@
 $('.responsive').slick({
-    dots: false,
+    dots: true,
     infinite: false,
     speed: 100,
     slidesToShow: 3,
