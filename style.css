@@ -178,7 +178,7 @@ input[type="number"]::-webkit-inner-spin-button {
     opacity: 0.5;
 }
 
-/* page index */
+/************************ page index *************************** */
 /* navbar */
 .navbar {
     position: fixed;
@@ -464,7 +464,7 @@ input[type="number"]::-webkit-inner-spin-button {
     border-top: 2px solid var(--color-white);
 }
 
-/* page about */
+/*********************** PAGE ABOUT *********************************/
 
 /* header */
 .banner-about {
@@ -521,7 +521,7 @@ input[type="number"]::-webkit-inner-spin-button {
     color: var(--gris);
     display: flex;
 }
-/* page contact */
+/************************ PAGE CONTACT *********************************/
 
 /* contact */
 .banner-contact {
@@ -648,7 +648,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     h1 {
-        font-family: "racing sans one";
+        font-family: "koulen";
         font-size: 3.75rem !important;
         text-align: center;
         margin: 0;
@@ -708,7 +708,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 @media (min-width: 992px) {
     h1 {
-        font-family: "racing sans one";
+        font-family: "koulen";
         font-size: 3.75rem !important;
         text-align: center;
         margin: 0;
@@ -783,17 +783,4 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 }
 
-/* Styles pour les écrans de petite taille (téléphones) */
-@media only screen and (max-width: 600px) {
-    /* Styles pour les écrans de petite taille ici */
-}
 
-/* Styles pour les écrans de taille moyenne (tablettes) */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    /* Styles pour les écrans de taille moyenne ici */
-}
-
-/* Styles pour les écrans de grande taille (ordinateurs de bureau) */
-@media only screen and (min-width: 1025px) {
-    /* Styles pour les écrans de grande taille ici */
-}
