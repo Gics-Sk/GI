@@ -83,22 +83,22 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .btn:hover,
 .btn:focus-visible,
-.btn-check:focus+.btn,
+.btn-check:focus + .btn,
 .btn:focus,
 .btn:first-child:active,
-:not(.btn-check)+.btn:active,
+:not(.btn-check) + .btn:active,
 .btn:first-child:active:focus-visible,
-:not(.btn-check)+.btn:active:focus-visible {
+:not(.btn-check) + .btn:active:focus-visible {
     box-shadow: none;
     transition: 0.5s ease-in-out;
 }
 
 .btn:hover.btn-primary,
 .btn:focus-visible.btn-primary,
-.btn-check:focus+.btn.btn-primary,
+.btn-check:focus + .btn.btn-primary,
 .btn:focus.btn-primary,
 .btn:first-child:active.btn-primary,
-:not(.btn-check)+.btn:active.btn-primary {
+:not(.btn-check) + .btn:active.btn-primary {
     background-color: var(--bleu-nuit-foncé) !important;
     border: 1px solid var(--bleu-nuit-foncé);
     text-decoration: none;
@@ -106,10 +106,10 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .btn:hover.btn-primary,
 .btn:focus-visible.btn-primary,
-.btn-check:focus+.btn.btn-primary,
+.btn-check:focus + .btn.btn-primary,
 .btn:focus.btn-primary,
 .btn:first-child:active.btn-primary,
-:not(.btn-check)+.btn:active.btn-primary {
+:not(.btn-check) + .btn:active.btn-primary {
     border: 1px solid var(--bleu-nuit-foncé);
 }
 
@@ -206,16 +206,16 @@ input[type="number"]::-webkit-inner-spin-button {
     color: var(--bleu) !important;
 }
 
-.navbar-toggler{
-    box-shadow: none!important;
-    border: none!important;
+.navbar-toggler {
+    box-shadow: none !important;
+    border: none !important;
 }
 
-.navbar-toggler .navbar-toggler-icon{
+.navbar-toggler .navbar-toggler-icon {
     color: #fff;
 }
 
-.navbar-collapse .navbar-nav{
+.navbar-collapse .navbar-nav {
     display: flex;
     margin-left: 1rem;
     flex-direction: row;
@@ -232,14 +232,13 @@ input[type="number"]::-webkit-inner-spin-button {
     padding: 14rem 0 10rem !important;
 }
 
-.banner-bg .banner-first{
+.banner-bg .banner-first {
     font-size: 2rem !important;
     text-align: center;
     margin-bottom: 1.5rem;
     font-family: "koulen";
-    font-weight: 700!important;
+    font-weight: 700 !important;
     color: var(--blanc);
-
 }
 
 .gradient-overlay {
@@ -273,13 +272,40 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-bottom: 2rem;
 }
 
-/* service */
-.banner-services {
-    background-image: url("image/service.png");
+/* service dev */
+.banner-dev {
+    background-image: url("image/Background.png");
     background-size: cover;
     background-position: center;
+    height: 50rem;
 }
-
+.banner-title-ser {
+    display: flex;
+}
+.banner-content-ser {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: var(--bleu-nuit-foncé);
+}
+.banner-description-ser {
+    color: var(--noire);
+}
+.img_card {
+    width: 5rem;
+    height: 5rem;
+    margin: auto;
+}
+.img-tech{
+    width: 5rem;
+    height: 5rem;
+    margin: auto;
+}
+.border-red {
+    border-top: 0.2rem solid #ff0000;
+}
+.technologie{
+    padding: 5rem 0;
+}
 .services {
     background-color: var(--bleu-ciel);
     padding: 5rem 0 0;
@@ -307,9 +333,9 @@ input[type="number"]::-webkit-inner-spin-button {
     text-align: center;
 }
 
-.section-title{
-    font-size: 3rem!important;
-    font-weight: 700!important;
+.section-title {
+    font-size: 3rem !important;
+    font-weight: 700 !important;
     margin-bottom: 1rem;
 }
 
@@ -349,7 +375,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .card_title {
     margin-bottom: 1rem;
-    font-size: 1.5rem!important;
+    font-size: 1.5rem !important;
     font-weight: 600;
     color: var(--Very-Dark-Blue);
 }
@@ -374,7 +400,7 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-bottom: 7rem;
 }
 
-.partenaires .card{
+.partenaires .card {
     background-color: #888b8d;
 }
 
@@ -390,13 +416,13 @@ input[type="number"]::-webkit-inner-spin-button {
     border-radius: 8px;
 }
 
-.newsletter .newsletter-title{
+.newsletter .newsletter-title {
     font-weight: 700;
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
-.newsletter .newsletter-text{
+.newsletter .newsletter-text {
     font-size: 1rem;
 }
 
@@ -412,7 +438,7 @@ input[type="number"]::-webkit-inner-spin-button {
     padding: 1rem;
 }
 
-.footer .footer-list-item{
+.footer .footer-list-item {
     margin: 1rem 0;
 }
 
@@ -463,14 +489,14 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .slick-dots li.slick-active button:before {
-    opacity: .75;
+    opacity: 0.75;
     color: var(--bleu-nuit-foncé);
 }
 
-.processus .card-title{
+.processus .card-title {
     display: flex;
     color: #000;
-    font-weight: 700!important;
+    font-weight: 700 !important;
 }
 
 .card-processus {
@@ -508,10 +534,10 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .contact .contact-item span {
-  font-weight: 600;
+    font-weight: 600;
 }
 
-.contact .contact-title{
+.contact .contact-title {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 4rem;
@@ -544,9 +570,9 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .progress-wrap::after {
     position: absolute;
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: '\f062';
+    content: "\f062";
     text-align: center;
     line-height: 46px;
     font-size: 18px;
@@ -572,9 +598,9 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .progress-wrap::before {
     position: absolute;
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: '\f062';
+    content: "\f062";
     text-align: center;
     line-height: 46px;
     font-size: 18px;
@@ -608,7 +634,6 @@ input[type="number"]::-webkit-inner-spin-button {
     transition: all 200ms linear;
 }
 
-
 @media (min-width: 768px) and (max-width: 991.98px) {
     h1 {
         font-family: "racing sans one";
@@ -623,7 +648,7 @@ input[type="number"]::-webkit-inner-spin-button {
         margin-right: 1.25rem;
     }
 
-    .banner-bg .banner-first{
+    .banner-bg .banner-first {
         font-size: 3.75rem !important;
         text-align: center;
         margin-bottom: 1.5rem;
@@ -681,7 +706,7 @@ input[type="number"]::-webkit-inner-spin-button {
         font-size: 1.25rem;
     }
 
-    .banner-bg .banner-first{
+    .banner-bg .banner-first {
         font-size: 3.75rem !important;
         text-align: center;
         margin-bottom: 1.5rem;
@@ -715,7 +740,7 @@ input[type="number"]::-webkit-inner-spin-button {
         padding: 4rem;
     }
 
-    .navbar-collapse .navbar-nav{
+    .navbar-collapse .navbar-nav {
         display: flex;
         margin-left: 0;
     }
