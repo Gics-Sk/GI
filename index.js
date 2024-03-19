@@ -1,5 +1,5 @@
 $('.responsive').slick({
-    dots: true,
+    dots: false,
     infinite: false,
     autoplay: true,
     autoplaySpeed: 2000,

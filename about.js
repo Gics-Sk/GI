@@ -1,5 +1,5 @@
 $('.responsive').slick({
-    dots: true,
+    dots: false,
     infinite: false,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -26,7 +26,7 @@ $('.responsive').slick({
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1.5
+          slidesToScroll: 1
         }
       }
     ]
