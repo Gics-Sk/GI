@@ -178,12 +178,12 @@ input[type="number"]::-webkit-inner-spin-button {
     opacity: 0.5;
 }
 
-/* page index */
+/************************ page index *************************** */
 /* navbar */
 .navbar {
     position: fixed;
     width: 100%;
-    z-index: 10000;
+    z-index: 1000;
     font-family: "koulen";
 }
 
@@ -506,7 +506,7 @@ input[type="number"]::-webkit-inner-spin-button {
     border-top: 2px solid var(--color-white);
 }
 
-/* page about */
+/*********************** PAGE ABOUT *********************************/
 
 /* header */
 .banner-about {
@@ -692,7 +692,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     h1 {
-        font-family: "racing sans one";
+        font-family: "koulen";
         font-size: 3.75rem !important;
         text-align: center;
         margin: 0;
@@ -760,7 +760,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 @media (min-width: 992px) {
     h1 {
-        font-family: "racing sans one";
+        font-family: "koulen";
         font-size: 3.75rem !important;
         text-align: center;
         margin: 0;
