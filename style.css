@@ -410,6 +410,15 @@ input[type="number"]::-webkit-inner-spin-button {
 .border-red {
     border-top: 0.2rem solid #ff0000;
 }
+.border-blue {
+    border-top: 0.2rem solid #56a7f1;
+}
+.border-yellow {
+    border-top: 0.2rem solid #facb31;
+}
+.border-cyan {
+    border-top: 0.2rem solid cyan;
+}
 
 
 /* portfolio */
@@ -542,6 +551,9 @@ input[type="number"]::-webkit-inner-spin-button {
     padding: 1rem;
     border-top: 2px solid var(--color-white);
 }
+
+/* service_design */
+
 
 /*PAGE ABOUT */
 
