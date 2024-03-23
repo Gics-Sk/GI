@@ -136,13 +136,9 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .form-control::placeholder {
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-weight: 400;
     color: var(--noire);
-}
-
-.form-control {
-    margin-top: 0.5rem;
 }
 
 .card {
@@ -178,7 +174,7 @@ input[type="number"]::-webkit-inner-spin-button {
     opacity: 0.5;
 }
 
-/************************ page index *************************** */
+/*page index  */
 /* navbar */
 .navbar {
     position: fixed;
@@ -252,6 +248,12 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 1rem;
     margin: 4rem 1rem;
     line-height: 1.5rem;
+}
+
+.banner-bg .banner-form{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
 }
 
 .header-transform .card {
@@ -365,21 +367,10 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .technologie .banner-first {
     text-align: start !important;
-    font-size: 2.5rem !important;
-    color: var(--bleu-nuit-foncé)!important;
 }
 
 .technologie .banner-content{
-    margin: 2rem 0!important;
-    color: var(--bleu-nuit-foncé)!important;
     text-align: start!important;
-    font-size: 2rem !important;
-
-}
-
-.technologie .banner-description {
-    color: var(--noire)!important;
-    font-size: 1.25rem !important;
 }
 
 /* banner-tech */
@@ -396,22 +387,12 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .banner-dev .banner-first {
     text-align: start !important;
-    font-size: 2.5rem !important;
     color: var(--bleu-nuit-foncé)!important;
 }
 
 .banner-dev .banner-content{
-    margin: 2rem 0!important;
     color: var(--bleu-nuit-foncé)!important;
     text-align: start!important;
-    font-size: 2rem !important;
-
-}
-
-.banner-dev .banner-description {
-    color: var(--noire)!important;
-    margin-bottom: 0.5rem!important;
-    font-size: 1.25rem !important;
 }
 
 .img_card {
@@ -442,30 +423,86 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* portfolio */
 .portofolio {
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
+
+/* faq */
+.faq {
+    padding: 0rem 0 3rem;
+    margin-bottom: 2rem;
+    background-color: var(--bleu-ciel);
+  }
+  
+  .faq .accordion-button {
+    background-color: #fff;
+    color: var(--color-primary);
+    border-radius: 0 !important;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .faq .accordion-button:focus {
+    border-color: none;
+    box-shadow: none;
+  }
+  
+  .faq .accordion-item {
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+  }
+
+  .faq .accordion-item:first-of-type .accordion-button {
+    border-radius: 8px;
+    border: none;
+  }
+  
+  .faq .accordion-item:last-of-type .accordion-button {
+    border-radius: 8px;
+    border: none;
+  }
+  
+  .accordion-button::after {
+    background-image: url(image/icon-add.svg);
+    background-size: 10px 10px;
+    background-position: center;
+  }
+  
+  .accordion-button:not(.collapsed)::after {
+    background-image: url(image/icon-open.svg);
+    background-size: 10px 10px;
+    background-position: center;
+  }
+  
+  .faq .accordion-body {
+    padding: 1rem 1rem;
+    color: var(--noire)!important;
+    font-size: 1rem;
+    font-weight: 400;
+  }
 
 /* partenaires */
 .partenaires {
-    margin-bottom: 7rem;
+    margin-bottom: 2rem;
 }
 
 /* newsletter */
-.newsletter {
-    background-color: #c3e1f1;
-    padding: 5rem 0;
+.newsletter{
+    margin: 0 0 3rem;
 }
 
-.newsletter .newsletter-bg {
-    background-color: var(--blanc);
-    padding: 1.5rem;
-    border-radius: 0.5rem;
+.newsletter .container {
+    background-color: #c3e1f1;
+    padding: 5rem 0;
+    border-radius: 14px;
 }
 
 .newsletter .newsletter-title {
     font-weight: 700;
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
+    text-align: start;
 }
 
 .newsletter .newsletter-text {
@@ -494,15 +531,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .footer .footer-list-item {
     margin: 1rem 0;
-}
-
-.footer .footer-social{
-    background-color: var(--gris);
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    line-height: 2.75rem;
-    padding: 0rem 0.875rem;
 }
 
 .footer-line {
@@ -705,8 +733,8 @@ input[type="number"]::-webkit-inner-spin-button {
 @media (min-width: 768px) and (max-width: 991.98px) {
     h1 {
         font-family: "koulen";
-        font-size: 3.75rem !important;
-        text-align: center;
+        font-size: 3rem !important;
+        text-align: start;
         margin: 0;
     }
 
@@ -740,16 +768,8 @@ input[type="number"]::-webkit-inner-spin-button {
         font-size: 1.5rem;
     }
 
-    .newsletter {
-        padding: 10rem 0;
-    }
-
     .newsletter .newsletter-bg {
         padding: 2.5rem;
-    }
-
-    .newsletter .newsletter-title {
-        font-size: 2rem;
     }
 
     .card_grid {
@@ -815,16 +835,8 @@ input[type="number"]::-webkit-inner-spin-button {
         font-size: 2rem;
     }
 
-    .newsletter {
-        padding: 10rem 0;
-    }
-
     .newsletter .newsletter-bg {
         padding: 2.5rem;
-    }
-
-    .newsletter .newsletter-title {
-        font-size: 2rem;
     }
 
     .contact form {
