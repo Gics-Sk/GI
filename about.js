@@ -3,6 +3,8 @@ $('.responsive').slick({
     infinite: false,
     autoplay: true,
     autoplaySpeed: 2000,
+    centerMode: true,
+    centerPadding: '20px',
     slidesToShow: 3,
     slidesToScroll: 3,
     responsive: [
@@ -11,8 +13,6 @@ $('.responsive').slick({
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-          infinite: true,
-          dots: true
         }
       },
       {
