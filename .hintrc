@@ -21,7 +21,8 @@
     "axe/structure": [
       "default",
       {
-        "listitem": "off"
+        "listitem": "off",
+        "list": "off"
       }
     ],
     "axe/parsing": [
@@ -30,6 +31,12 @@
         "duplicate-id-aria": "off"
       }
     ],
-    "button-type": "off"
+    "button-type": "off",
+    "axe/keyboard": [
+      "default",
+      {
+        "nested-interactive": "off"
+      }
+    ]
   }
 }
