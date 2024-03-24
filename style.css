@@ -335,12 +335,12 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .cards {
-    max-width: 320px;
+    max-width: 20rem;
     margin: 0 auto;
     padding: 2rem;
-    border-top: 5px solid var(--border-color);
-    border-radius: 5px;
-    box-shadow: 0 10px 10px rgba(23, 79, 138, 0.1);
+    border-top: 0.3rem solid var(--border-color);
+    border-radius: 0.3rem;
+    box-shadow: 0 0.6rem 0.6rem rgba(23, 79, 138, 0.1);
 }
 
 .card_title {
@@ -541,7 +541,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .footer .copyright .container {
     padding: 1rem;
-    border-top: 2px solid var(--color-white);
+    border-top: 0.125rem solid var(--color-white);
 }
 
 /* service_design */
