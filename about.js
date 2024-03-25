@@ -3,7 +3,7 @@ $('.responsive').slick({
     infinite: false,
     autoplay: true,
     autoplaySpeed: 2000,
-    centerMode: true,
+    // centerMode: true,
     centerPadding: '20px',
     slidesToShow: 3,
     slidesToScroll: 3,
