@@ -264,7 +264,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .header-transform .card .card-title {
-  color: #000000;
+  color: #000!important;
   margin-bottom: 2rem;
   justify-content: center;
 }
@@ -601,7 +601,7 @@ input[type="number"]::-webkit-inner-spin-button {
 /* processus */
 .processus {
   background: linear-gradient(to bottom, #d7ecfc, #f0f4f6);
-  padding-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 
 .header-transform {
@@ -623,9 +623,9 @@ input[type="number"]::-webkit-inner-spin-button {
   color: var(--bleu-nuit-foncé);
 }
 
-.processus .slick-slider .slick-track {
-  transform: translate3d(0, 0, 0) !important;
-}
+/* .slick-slider .slick-track {
+    transform: translate3d(1px, 0, 0) !important;
+  } */
 
 .processus .card-title {
   display: flex;
@@ -793,6 +793,10 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .banner-content {
     margin: 4rem 6rem;
+  }
+  
+  .header-transform .card{
+    width: 300px;
   }
 
   .services .card {
