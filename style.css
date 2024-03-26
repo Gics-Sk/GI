@@ -6,7 +6,7 @@
   --noire: #000000;
   --bleu: #69a6eb;
   --bleu-nuit: #0851a591;
-  --bleu-nuit-foncé: #0851a5;
+  --bleu-nuit-foncé: #0a6ddd;
   --gris: #888b8d;
   --bleu-ciel: #c3e1f1;
   --Very-Dark-Blue: hsl(234, 12%, 34%);
@@ -77,8 +77,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .btn-primary {
-  background-color: var(--bleu-nuit-foncé) !important;
-  border: 1px solid var(--bleu-nuit-foncé);
+  background-color: var(--bleu-nuit) !important;
+  border-style: none;
 }
 
 .btn:hover,
@@ -151,16 +151,16 @@ input[type="number"]::-webkit-inner-spin-button {
 .navbar {
   position: fixed;
   width: 100%;
-  z-index: 1000;
   font-family: "koulen";
 }
 
 .navbar-scrolled {
-  background-color: rgba(22, 35, 78, 0.8);
+  background-color: var(--blanc);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
 }
 
 .nav-link {
-  color: var(--blanc) !important;
+  color: var(--noire) !important;
   text-align: center;
   margin-right: 1rem;
   font-size: 0.695rem;
@@ -180,7 +180,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .navbar-toggler .navbar-toggler-icon {
-  color: #fff;
+  color: var(--noire);
 }
 
 .navbar-collapse .navbar-nav {
@@ -559,7 +559,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* footer */
 .footer {
-  background-color: var(--bleu-nuit-foncé);
+  background-color:#25273b;
   padding: 3rem 0 0;
   color: var(--blanc);
   text-align: center;
