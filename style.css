@@ -6,7 +6,7 @@
   --noire: #000000;
   --bleu: #69a6eb;
   --bleu-nuit: #0851a591;
-  --bleu-nuit-foncé: #0a6ddd;
+  --bleu-nuit-foncé: #093c77;
   --gris: #888b8d;
   --bleu-ciel: #c3e1f1;
   --Very-Dark-Blue: hsl(234, 12%, 34%);
@@ -155,12 +155,12 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .navbar-scrolled {
-  background-color: var(--blanc);
+  background-color:#01063573;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
 }
 
 .nav-link {
-  color: var(--noire) !important;
+  color: var(--blanc) !important;
   text-align: center;
   margin-right: 1rem;
   font-size: 0.695rem;
@@ -323,7 +323,7 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-bottom: 1rem;
   font-size: 1.5rem !important;
   font-weight: 600;
-  color: var(--Very-Dark-Blue);
+  color: var(--Very-Dark-Blue)!important;
 }
 
 .card_content {
@@ -413,10 +413,10 @@ input[type="number"]::-webkit-inner-spin-button {
   position: relative;
 }
 
-.card-title {
+/* .card-title {
   color: var(--blanc) !important;
   font-weight: 600;
-}
+} */
 
 .card-overlay {
     position: absolute;
@@ -559,7 +559,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* footer */
 .footer {
-  background-color:#25273b;
+  background-color:#030944b7;
   padding: 3rem 0 0;
   color: var(--blanc);
   text-align: center;
