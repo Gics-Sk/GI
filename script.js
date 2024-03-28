@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 50) { // 50 est la distance de défilement à partir du haut pour appliquer le style
+    if ($(this).scrollTop() > 50) { 
       $('.navbar').addClass('navbar-scrolled');
     } else {
       $('.navbar').removeClass('navbar-scrolled');
@@ -15,8 +15,6 @@ $(document).ready(function () {
 
   $(document).ready(function () {
     "use strict";
-
-    //Scroll back to top
 
     var progressPath = document.querySelector('.progress-wrap path');
     var pathLength = progressPath.getTotalLength();
