@@ -154,6 +154,7 @@ input[type="number"]::-webkit-inner-spin-button {
   position: fixed;
   width: 100%;
   font-family: "koulen";
+  z-index: 1;
 }
 
 .navbar-scrolled {
@@ -671,7 +672,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .processus .card-number {
   font-weight: 900;
   font-size: 5rem !important;
-  color: var(--gris);
+  color: var(--bleu-nuit-foncé);
   display: flex;
 }
 
