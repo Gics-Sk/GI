@@ -156,10 +156,12 @@ input[type="number"]::-webkit-inner-spin-button {
   font-family: "koulen";
 }
 
-.navbar-scrolled {
+/* .navbar-scrolled {
   background-color:#01063573;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
-}
+  margin-left: 0;
+  margin-right: 0;
+} */
 
 .nav-link {
   color: var(--blanc) !important;
