@@ -35,6 +35,7 @@ body {
   height: auto;
   position: relative!important;
   z-index: -1!important;
+  overflow-x: hidden;
 }
 
 img {
@@ -235,7 +236,8 @@ input[type="number"]::-webkit-inner-spin-button {
 .header-transform .card {
   width: 335px;
   text-align: center;
-  padding-bottom: 4rem;
+  height: 400px;
+  margin: 0 1rem;
 }
 
 .header-transform .card .card-line {
@@ -880,6 +882,10 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .portfolio-detail .card-img-top {
     max-width: 100%;
+  }
+
+  .footer .nav {
+    flex-direction: column;
   }
 }
 
