@@ -35,6 +35,7 @@ body {
   height: auto;
   position: relative!important;
   z-index: -1!important;
+  overflow-x: hidden;
 }
 
 img {
